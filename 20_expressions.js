@@ -18,47 +18,49 @@ console.log(num < (3 + 1));
 
 console.log(num <= 4);
 
-console.log(num == numStr);
+console.log(num == numStr); //True
 
-console.log(num != numStr);
+console.log(num != numStr); //False
 
-console.log(num === numStr);
+console.log(num === numStr); //False
 
-console.log(num !== numStr);
+console.log(num !== numStr); //True
 
 const lowStr = 'hello';
 const upStr = 'HELLO';
 
-lowStr == upStr;
-lowStr === upStr;
+lowStr == upStr; //False
+lowStr === upStr; //False
 
 
 // && (logical and), both conditions must evaluate to true for the expression to return true
 const num6 = 6;
-console.log((string.length == num6) && (num6 > 3));
+console.log((string.length == num6) && (num6 > 3)); //false
 
-console.log((string.length == num6) && (string.length != 6));
+console.log((string.length == num6) && (string.length != 6)); //false
 
-console.log(1 === 1 && 4 > 6);
+console.log(1 === 1 && 4 > 6); //false
 
 
 // || (logical or), at least one condition must evaluate to true to return true
-console.log((string.length > 7) || (num6 >= 8));
+console.log((string.length > 7) || (num6 >= 8)); //true
 
-console.log((string.length < 6) || (num6 >= 2));
+console.log((string.length < 6) || (num6 >= 2)); //true
 
-console.log(3 !== '3' || 3 === 'three');
+console.log(3 !== '3' || 3 === 'three'); //true
 
 
 // ! (logical not), takes a single Boolean value and inverts it
-console.log(!(4 > 9));
+console.log(!(4 > 9)); //true
 
-console.log(!(string.length == num6));
+console.log(!(string.length == num6));  //true
 
-console.log((1 < 2) && (3 + 4 >= 7) || false);
+console.log((1 < 2) && (3 + 4 >= 7) || false); //true
 
-console.log((1 < 2) && (3 + 4 > 7) || true);
 
+console.log((1 < 2) && (3 + 4 > 7) || true);  //true
+
+console.log(true || true && false);  //true
 
 // Your turn!
 // 1. Declare and assign 6 variables: 2 that are strings, 2 that are numbers, 2 that are booleans.
